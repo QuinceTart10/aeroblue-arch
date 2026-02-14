@@ -1,0 +1,3 @@
+PS1='C:${PWD//\//\\\\}> '
+
+echo -e "Microsoft Windows [Version 6.1.7600]\nCopyright (c) 2009 Microsoft Corporation.  All rights reserved.\n"
