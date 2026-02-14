@@ -14,7 +14,7 @@ RUN git clone --depth 1 https://gitgud.io/wackyideas/aerothemeplasma.git /tmp/ae
     cp -r /tmp/aerothemeplasma/kwin/smod/. /usr/share/smod && \
     cp -r /tmp/aerothemeplasma/misc/kvantum/Kvantum/. /usr/share/Kvantum && \
     tar -xf /tmp/aerothemeplasma/misc/sounds/sounds.tar.gz --directory /usr/share/sounds && \
-    tar -xf /tmp/aerothemeplasma/misc/icons/Windows 7 Aero.tar.gz --directory /usr/share/icons && \
+    tar -xf /tmp/aerothemeplasma/misc/icons/Windows\ 7\ Aero.tar.gz --directory /usr/share/icons && \
     tar -xf /tmp/aerothemeplasma/misc/cursors/aero-drop.tar.gz --directory /usr/share/icons && \
     cp -r /tmp/aerothemeplasma/misc/mimetype/. /usr/share/mime/packages && \
     cp /tmp/aerothemeplasma/misc/fontconfig/fonts.conf /usr/share/fontconfig/conf.avail/99-aerothemeplasma.conf && \
