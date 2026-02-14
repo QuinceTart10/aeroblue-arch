@@ -7,7 +7,7 @@ RUN pacman -S --noconfirm plasma-desktop konsole git cmake extra-cmake-modules n
     systemctl enable sddm.service
 
 RUN git clone --depth 1 https://gitgud.io/wackyideas/aerothemeplasma.git /tmp/aerothemeplasma && \
-    bash /tmp/compile.sh && \
+    bash /tmp/build/compile.sh && \
     cp -r /tmp/aerothemeplasma/plasma/. /usr/share/plasma && rm -rf /usr/share/plasma/aerothemeplasma-kcmloader /usr/share/plasma/color_scheme /usr/share/plasma/sddm && \
     cp -r /tmp/aerothemeplasma/plasma/sddm/sddm-theme-mod/. /usr/share/sddm/themes/sddm-theme-mod && \
     cp -r /tmp/aerothemeplasma/kwin/. /usr/share/kwin-wayland && rm -rf /usr/share/kwin-wayland/decoration /usr/share/kwin-wayland/effects_cpp /usr/share/kwin-wayland/smod && \
