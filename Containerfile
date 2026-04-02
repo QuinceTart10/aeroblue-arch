@@ -5,7 +5,8 @@ COPY /system_files /
 RUN pacman -S --needed git base-devel && \
     git clone https://aur.archlinux.org/yay.git /tmp/yay && \
     cd /tmp/yay && \
-    makepkg -si
+    makepkg -si && \
+    rm -rf /tmp/yay
 
 RUN yay -S uac-polkit-agent aerothemeplasma-desktop aeroshell-libplasma aeroshell-workspace aeroshell-kwin-components aeroshell-smod aerothemeplasma-sounds aerothemeplasma-icons
 
