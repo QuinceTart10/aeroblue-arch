@@ -2,7 +2,7 @@ FROM ghcr.io/bootcrew/arch-bootc:latest
 
 COPY /system_files /
 
-RUN sudo pacman -S --needed git base-devel && \
+RUN pacman -S --needed git base-devel && \
     git clone https://aur.archlinux.org/yay.git /tmp/yay && \
     cd /tmp/yay && \
     makepkg -si
